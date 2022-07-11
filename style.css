@@ -60,7 +60,7 @@ body {
 }
 
 section {
-    padding: 6rem 0;
+    padding: 10rem 0;
 }
 
 section h2 {
@@ -92,10 +92,13 @@ a {
     color: var(--normal);
 }
 
+.btn a {
+    color: var(--black);
+}
+
 .btn {
     display: inline-block;
     padding: .5rem 2rem;
-    color: var(--black);
     background-color: var(--primary);
     border: 1px solid transparent;
     border-radius: .3rem;
@@ -104,8 +107,11 @@ a {
 
 .btn:hover {
     background-color: transparent;
-    color: var(--primary);
     border: 1px solid var(--primary);
+}
+
+.btn:hover a {
+    color: var(--primary);
 }
 
 .border-bottom {
@@ -239,6 +245,51 @@ header::before {
 }
 
 .header-right .typing {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* about section css here */
+
+.about-center{
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.about-container .about-img {
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-container .about-text {
+    line-height: 1.5;
+    padding-bottom: 2.5rem;
+    letter-spacing: .5px;
+    text-align: justify;
+}
+
+.about-text .text {
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: .8rem;
+}
+
+
+.about-text .typing-2 {
     color: var(--primary);
     font-weight: 500;
 }
